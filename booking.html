@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css" />
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <link rel="stylesheet" href="css/image-slider.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+          <!-- Top Navbar -->
+          <div class="navbar">
+          <div class="navbar-bg"></div>
+            <div class="navbar-inner sliding">
+              <div class="left">
+                <a class="link back">
+                  <i class="icon icon-back"></i>
+                  <span class="if-not-md">Back</span>
+                </a>
+              </div>
+              <div class="title">Booking Ticket</div>
+            </div>
+          </div>
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block">
+              <form class="list" id="my-form">
+                <ul>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Full Name</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="nama_booking" placeholder="Fullname">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">E-mail</div>
+                        <div class="item-input-wrap">
+                          <input type="email" id="email_booking" placeholder="E-mail">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Days</div>
+                        <div class="item-input-wrap">
+                          <select id="tanggl_booking">
+                            <option value="22-11-2021" selected>Sabtu</option>
+                            <option value="23-11-2021">Minggu</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Seats</div>
+                        <div class="item-input-wrap">
+                          <select id="seat_booking">
+                            <option value="22-11-2021" selected>A1</option>
+                            <option value="23-11-2021">A2</option>
+                            <option value="23-11-2021">A3</option>
+                            <option value="23-11-2021">A4</option>
+                            <option value="23-11-2021">A5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                
+                </ul>
+              </form>
+              <div class="block block-strong row">
+                <div class="col"><a class="col button button-outline button-round" href="/konten/">Booking</a></div>
+              </div>
+ 
+              <!-- Link to another page -->
+
+            </div>
+
+
+            <div data-name="my_booked" class="page stacked">
+              <!-- Top Navbar -->
+              <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner sliding">
+                  <div class="title">Music Event Ticket</div>
+                </div>
+              </div>
+              <!-- Bottom Toolbar -->
+              <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                  <!-- Toolbar links -->
+                  <a href="#" class="link">Link 1</a>
+                  <a href="#" class="link">Link 2</a>
+                </div>
+              </div>
+              <!-- Scrollable page content -->
+              <div class="page-content">
+                <div class="block">
+                  <div class="data-table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="label-cell">ID</th>
+                          <th class="label-cell">Nama</th>
+                          <th class="label-cell">Email</th>
+                          <th class="label-cell">Tanggal</th>
+                        </tr>
+                      </thead>
+                      <tbody id="my_booking">
+                  
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="block block-strong row">
+                    <div class="col"><a class="col button button-outline button-round" href="/home/">Booking</a></div>
+                  </div>
+            
+                  <!-- Link to another page -->
+            
+                </div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->-
+    <script type="text/javascript" src="js/booking.js"></script>
+    <script type="text/javascript" src="js/image-slider.js"></script>
+  </body>
+</html>
